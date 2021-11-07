@@ -9,25 +9,23 @@ let inputValue;
 form.addEventListener("submit", (e) => {
   e.preventDefault();
   inputValue = inputFiled.value;
-
   fetch(
-    `https://api.openweathermap.org/data/2.5/weather?q=${inputValue}&units=metric&lang=it&appid=${appID}`
+    `https://api.openweathermap.org/data/2.5/weather?q=${inputValue},it&units=metric&lang=it&appid=${appID}`
   )
     .then((response) => response.json())
     .then((response) => {
+      console.log(response);
       locationZone.textContent = response.name;
       temp.textContent = Math.floor(response.main.temp) + "°";
       climatic.textContent = response.weather[0].description;
-  
-  
+
       const today = document.querySelector(".day");
       let utcSeconds = response.dt;
       let d = new Date(0);
       d.setUTCSeconds(utcSeconds);
       today.textContent = d;
 
-    });
-    
-    inputValue = ''
+      inputValue = "";
+    })
 });
 
