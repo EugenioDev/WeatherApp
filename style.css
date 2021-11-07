@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #ced1d6;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+.weather-container {
+  background-color: #fff;
+  width: 400px;
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+.weather-container header {
+  padding: 20px;
+  text-align: center;
+  color: #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header {
+  flex-direction: column;
+}
+header h1 {
+  font-weight: 300;
+  color: lightskyblue;
+  margin-bottom: 20px;
+}
+header h4 {
+  font-weight: 400;
+}
+.weather-content {
+  margin: 20px auto;
+  text-align: center;
+}
+
+.temperature h3 {
+  font-weight: 700;
+  font-size: 50px;
+}
+
+.temperature h3 span {
+  font-weight: 400;
+  font-size: 50px;
+}
+
+.weather-input {
+  margin: 20px 20px;
+}
+.form-control-weather {
+  height: 100%;
+}
+.form-control-weather input {
+  height: 50px;
+  width: 100%;
+  font-size: 15px;
+  font-weight: 300;
+  font-family: inherit;
+}
+
+input {
+  border: 1px solid #eee;
+  padding: 10px;
+  border-radius: 8px;
+}
+input:focus {
+  outline: none;
+}
+.btn {
+  background-color: rebeccapurple;
+  width: 100%;
+  font-size: 15px;
+  font-weight: 400;
+  font-family: inherit;
+  height: 50px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  color: #eee;
+  background-color: lightskyblue;
+  font-weight: 700;
+}
+
+.day {
+  font-size: 12px;
+  margin-bottom: 20px;
+}

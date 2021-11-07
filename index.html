@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Weather App</title>
+  </head>
+  <body>
+    <!-- Container App -->
+    <div class="weather-container">
+      <header>
+        <h1>Weather App</h1>
+        <p class="day"></p>
+        <h4></h4>
+      </header>
+      <div class="weather-content">
+        <div class="temperature">
+          <h3><span></span></h3>
+          <p class="weather"></p>
+        </div>
+        <div class="weather-input">
+          <form id="form" class="form">
+            <div class="form-control-weather">
+              <input
+                type="text"
+                placeholder="Type City Name"
+                id="input-field"
+              />
+              <button class="btn">Search</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- End Container App -->
+    <script src="app.js"></script>
+  </body>
+</html>
