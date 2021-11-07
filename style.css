@@ -46,7 +46,9 @@ header h4 {
   margin: 20px auto;
   text-align: center;
 }
-
+.temperature {
+ 
+}
 .temperature h3 {
   font-weight: 700;
   font-size: 50px;
@@ -103,4 +105,10 @@ input:focus {
 .day {
   font-size: 12px;
   margin-bottom: 20px;
+}
+
+
+.icon {
+  width: 20px;
+  height: 20px;
 }
